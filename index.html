@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hepta- Travels and Tours</title>
+<!--icon-->    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!--font awesome icon-->
+
+
+    <link rel="stylesheet" href="styles.css">
+<!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--Javascript-->
+<script src="myScript.js"></script>
+</head>
+<body>
+    <!--waiting spinner  -->
+    <div id="spinner"><i></i></div>
+
+    <!--Menu page-->
+        <div class="menu-container" id="menu-page">
+            <div class="close-icon" onclick="toggle()"><i class="material-icons" style="font-size: 50px;">close</i></div>
+                <div class="nav-menu">
+                    <div style="color:#65c0ba"><a class="nostyle" href="index.html">Home</a></div>
+                    <div><a class="nostyle" href="hotels.html">Hotels</a></div>
+                    <div><a class="nostyle" href="about-us.html">About Us</a></div>
+                    <div><a class="nostyle" href="gallery.html">Gallery</a></div>
+                    <div><a class="nostyle" href="news.html">News</a></div>
+                    <div><a class="nostyle" href="contact.html">Contact</a></div>
+                </div>
+
+    </div>
+    
+    <div id="main-container" >
+        <div class="landing-section" id="landing-section">
+            <div class="header abril-font">
+                <div class="website-name"><a class="nostyle" href="index.html">Hepta</a></div>
+                <div class="navigation-icon" onclick="toggle()"><i class="material-icons" style="font-size: 50px;">menu</i></div>
+            </div>
+            <div class="main-heading animate-me abril-font">Travels & Tours</div>
+            <div class="sub-heading animate-me">A free template by Colorlib. Download and share!</div>
+            <div class="button animate-me"><a class="nostyle" href="index.html"><button>Visit Colorlib</button></a></div>
+            <div class="scroll">
+                <a class="nostyle" href="#video-section">
+                <div class="icon"><i class="material-icons"style="font-size: 40px;">arrow_drop_down</i></div>
+                <div class="icon-text">SCROLL DOWN</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="video-section" id="video-section">
+            <div class="image-card animate-me"><img src="images/mountain.jpg"></div>
+            <div class="image-text animate-me">
+                <h1 class="abril-font">Welcome To Our Website</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p class="video-icon" id="video-icon"><i class="material-icons" style="font-size: 50px;">play_circle</i><span class="icon-text">Watch the video</span></p>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="services-text animate-me">
+                <h1 class="abril-font">Experience Once In Your Life Time</h1>
+                <p class="services-text-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+
+            <div class="services-cards animate-me2">
+                <div>
+                    <img class="services-cards-image" src="images/001-breakfast.svg">
+                    <h2>Good Foods</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+                <div><img class="services-cards-image" src="images/002-planet-earth.svg">
+                    <h2>Travel Anywhere</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>   
+                <div>
+                    <img class="services-cards-image" src="images/003-airplane.svg">
+                    <h2>Airplane</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+
+           
+                <div>
+                    <img class="services-cards-image" src="images/004-beach.svg">
+                    <h2>Beach Resort</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+                <div><img class="services-cards-image" src="images/005-mountains.svg">
+                    <h2>Mountain Climbing</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>   
+                <div>
+                    <img class="services-cards-image" src="images/006-hot-air-balloon.svg">
+                    <h2>Hot Air Balloon</h2>
+                    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="carousel-blog">
+            <div class="carousal-text animate-me">
+                <div class="carousal-heading abril-font">International Tour Management.</div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+              <div class="main-carousel-container animate-me">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/slider_1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/slider_2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/slider_3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/slider_4.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/slider_5.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="blog-text">
+                 <h1 class="abril-font">Recent Blog Post</h1>
+                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+            </div>
+
+            <div class="blog-cards">
+                <div class="blog-cards-item">
+                    <img src="images/blog-card_1.jpg" alt="">
+                    <div class="blog-cards-item-text">
+                        <div class="blog-cards-date">Febraury 26, 2018</div>
+                        <h2 class="abril-font">45 Places to Unwind</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="blog-cards-item">
+                    <img src="images/blog-card_2.jpg" alt="">
+                    <div class="blog-cards-item-text">
+                        <div class="blog-cards-date">Febraury 26, 2018</div>
+                        <h2 class="abril-font">45 Places to Unwind</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="blog-cards-item">
+                    <img src="images/blog-card_3.jpg" alt="">
+                    <div class="blog-cards-item-text">
+                        <div class="blog-cards-date">Febraury 26, 2018</div>
+                        <h2 class="abril-font">45 Places to Unwind</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        
+                    </div>
+            </div>
+        </div>
+        </div>
+        <div class="customers">
+            <h1 class="abril-font">Happy Customers</h1>
+            <div class="customers-cards">
+                <div class="customers-cards-item">
+                    <img src="images/person_1.jpg" alt="">
+                    <div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+                        <i>-- Clare Gupta</i>
+                    </div>
+                </div>
+                <div class="customers-cards-item">
+                    <img src="images/person_2.jpg" alt="">
+                    <div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+                        <i>-- Rogie Slater</i>
+                    </div>
+                </div>
+                <div class="customers-cards-item">
+                    <img src="images/person_3.jpg" alt="">
+                    <div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+                        <i>-- John Doe</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="destinations">
+            <div class="destinations-text">
+                <h1 class="abril-font">Top Destination</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque quo odio repudiandae sunt eveniet? Enim facilis laborum voluptate id porro, culpa maiores quis, blanditiis laboriosam alias. Sed.</p>
+            </div>
+            <div class="destinations-cards animate-me3">
+                <div class="destinations-cards-item">
+                    <img src="images/destination-card_1.jpg" alt="">
+                    <h4 class="abril-font">Food & Wines</h4>
+                    <div class="feedback">
+                        <i class="ranking">
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_half</i>
+                            <i class="material-symbols-outlined" style="font-size: 15px;">star</i>
+
+                        </i>
+                        <i class="reviews">3,239 reviews</i>
+                    </div>
+                </div>
+                
+                <div class="destinations-cards-item">
+                    <img src="images/destination-card_2.jpg" alt="">
+                    <h4 class="abril-font">Resort & Spa</h4>
+                    <div class="feedback">
+                        <i class="ranking">
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_half</i>
+                            <i class="material-symbols-outlined" style="font-size: 15px;">star</i>
+                        </i>
+                        <i class="reviews">4,231 reviews</i>
+                    </div>
+                </div>
+                
+                <div class="destinations-cards-item">
+                    <img src="images/destination-card_3.jpg" alt="">
+                    <h4 class="abril-font">Hotel Rooms</h4>
+                    <div class="feedback">
+                        <i class="ranking">
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-symbols-outlined" style="font-size: 15px;">star</i>
+                        </i>
+                        <i class="reviews">2,221 reviews</i>
+                    </div>
+                </div>
+
+                <div class="destinations-cards-item">
+                    <img src="images/destination-card_4.jpg" alt="">
+                    <h4 class="abril-font">Mountain Climbing</h4>
+                    <div class="feedback">
+                        <i class="ranking">
+                            <i class="ranking">
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-icons" style="font-size: 15px;">star_rate</i>
+                            <i class="material-symbols-outlined" style="font-size: 15px;">star</i>
+                        </i>
+                        </i>
+                        <i class="reviews">6,239 reviews</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer-container">
+        <footer class="py-5 bg-dark text-white"> 
+  <div class="row"> 
+    <div class="col-6 col-md-2 mb-3"> 
+       <h5>Quick Link</h5> 
+        <ul class="nav flex-column"> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> 
+        </ul> 
+    </div> 
+    <div class="col-6 col-md-2 mb-3"> 
+      <h5>Support</h5> 
+      <ul class="nav flex-column"> 
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> 
+           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> 
+          </ul> 
+        </div> 
+        <div class="col-6 col-md-2 mb-3"> 
+          <h5>Contact Info</h5> 
+          <ul class="nav flex-column"> 
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> 
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> 
+              </ul> 
+            </div> 
+            <div class="col-md-5 offset-md-1 mb-3"> 
+              <form>
+                 <h5>Subscribe</h5>
+                  <p>Sign up for our newsletter</p> 
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2"> 
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                     <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button" style="background-color: #65c0ba;">Subscribe</button> 
+                    </div> 
+                  </form>
+      </div>
+  </div> 
+                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"> 
+                  <p style="align-self: center;">© 2025 Company, Inc. All rights reserved.</p> 
+                  
+                </div> 
+</footer>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
