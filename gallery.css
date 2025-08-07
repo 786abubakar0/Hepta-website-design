@@ -1,0 +1,545 @@
+body{
+    margin:0;
+}
+.abril-font{
+    font-family: "Abril Fatface", times, serif;
+
+}
+#spinner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#spinner i{
+     width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#main-container{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+a.nostyle{
+ text-align: center;
+  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none; /* Remove the underline */
+
+}
+
+a.nostyle:hover{
+    color: inherit;
+    
+}
+/* Animations and other effects */
+/* 1. Define the Keyframe Animation */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateY(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+
+.animate-me{
+    opacity:0;
+}
+.active1{
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+/* Base style for landing section */
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 100vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+
+.landing-section-text{
+    justify-items: center;
+    margin: auto;
+}
+.main-heading{
+    align-self: center;
+    font-size: 7vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+    background-color: white;
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+.gallery-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10vw 0px;
+}
+
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - (25px*3)/4);
+    max-width: calc(25% - (25px*3)/4);
+    background-color: white;
+}
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-2{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px)/2);
+    max-width: calc(50% - (25px)/2);
+    background-color: white;
+}
+
+.blog-cards-item-2 img{
+    width: 100%;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+/* styles for screen with 1024 or less width */
+@media (max-width:992px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 90vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 5vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+.gallery-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10vw 5vw;
+}
+
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px*3)/4);
+    max-width: calc(50% - (25px*3)/4);
+    background-color: white;
+}
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-2{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px)/2);
+    max-width: calc(50% - (25px)/2);
+    background-color: white;
+}
+
+.blog-cards-item-2 img{
+    width: 100%;
+}
+
+
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+
+/* styles for screen with 768 or less width */
+@media (max-width:768px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 85vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 6vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.gallery-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10vw 7vw;
+}
+
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - (25px*3)/4);
+    max-width: calc(100% - (25px*3)/4);
+    background-color: white;
+}
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-2{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - (25px)/2);
+    max-width: calc(100% - (25px)/2);
+    background-color: white;
+}
+
+.blog-cards-item-2 img{
+    width: 100%;
+}
+
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+@media (max-width:600px){
+  .landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 80vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 10vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 3.5vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.gallery-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10vw 0vw;
+}
+
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - (25px*3)/4);
+    max-width: calc(100% - (25px*3)/4);
+    background-color: white;
+}
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-2{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - (25px)/2);
+    max-width: calc(100% - (25px)/2);
+    background-color: white;
+}
+
+.blog-cards-item-2 img{
+    width: 100%;
+}
+
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}  
+}

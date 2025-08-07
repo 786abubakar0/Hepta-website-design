@@ -1,0 +1,1278 @@
+body{
+    margin:0;
+}
+.abril-font{
+    font-family: "Abril Fatface", times, serif;
+
+}
+#spinner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#spinner i{
+     width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#main-container{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+a.nostyle{
+ text-align: center;
+  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none; /* Remove the underline */
+
+}
+
+a.nostyle:hover{
+    color: inherit;
+    
+}
+/* Animations and other effects */
+
+#video-icon:hover{
+    color:#595f65;
+}
+
+/* 1. Define the Keyframe Animation */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateY(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+
+/* 2. Define the Keyframe Animation */
+@keyframes slideInFromCorner {
+  0% {
+    transform: translateX(-100px) translateY(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateX(0) translateY(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+
+/* 3. Define the Keyframe Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateX(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+.animate-me{
+    opacity:0;
+}
+.active1{
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.animate-me2{
+    opacity:0;
+}
+.active2{
+    animation: slideInFromCorner 1s ease-out forwards;
+}
+
+.active3{
+    animation: slideInFromLeft 1s ease-out forwards;
+
+}
+.animate-me3{
+    opacity: 0;
+ 
+}
+/* Base style for landing section */
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 120vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+
+.landing-section-text{
+    justify-items: center;
+    margin: auto;
+}
+.main-heading{
+    align-self: center;
+    font-size: 7vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+.video-section{
+    background-color: rgba(38, 45, 63, 0.05);
+    display: flex;
+    padding: 0 5vw;
+    flex-wrap: wrap;
+    /* height: auto; */
+}
+.image-card{
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:100%;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50%);   
+    max-width: calc(50%);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 70px 50px;
+    
+}
+.image-text h1{
+    font-size: 35px;
+}
+.image-text p{
+    font-size: 17px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+
+.services{
+    display:flex;
+    background-color: rgba(38, 45, 63, 0.05);
+    padding: 6.5vw 0vw;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+}
+.services-text{
+    animation-delay: 0.1s;
+    padding: 0 20vw;
+}
+.services-text-p{
+    font-size: 20px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+.services-cards{
+    display: flex;
+    animation-delay: 0.2s;
+    padding: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-cards > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(33% - 30px*5/6);
+    max-width: calc(33%- 30px*5/6);
+    line-height: 30px;
+     /* padding: 20px; */
+}
+
+.services-cards-image{
+    width:25%;
+    height:auto;
+
+}
+.services-cards h2{
+    font-family: "Abril Fatface", times, serif;
+    font-size:2vw;
+
+}
+
+.services-cards div span{
+        color:#838b92;
+        font-size: 15px;
+
+}
+.carousel-blog{
+display:flex;
+flex-direction: column;
+background-image:linear-gradient(180deg,
+rgba(38, 45, 63, 0.05) 0%,rgba(38, 45, 63, 0.05) 35%, rgba(38, 45, 63, 0.1) 35%, rgba(38, 45, 63, 0.1) 100%) ;
+align-items: center;
+padding:80px 0px;
+}
+
+.carousal-text{
+    padding: 5vw 20vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 50px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:80vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.blog-text{
+    /* width:60vw; */
+    padding: 60px 20vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:20px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(33% - (25px*2)/3);
+    max-width: calc(33% - (25px*2)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+/* styles for screen with 1024 or less width */
+@media (max-width:992px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 95vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 5vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    background-color: rgba(38, 45, 63, 0.05);
+    display: flex;
+    padding: 0 6vw;
+    flex-wrap: wrap;
+    height: unset;
+}
+.image-card{
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:auto;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50%);   
+    max-width: calc(50%);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 50px 3vw;
+    
+}
+.image-text p{
+    font-size: 17px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+
+.services{
+    display:flex;
+    background-color: rgba(38, 45, 63, 0.05);
+    padding: 8vw 0vw;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+}
+.services-text{
+    animation-delay: 0.1s;
+    padding: 0 20vw;
+}
+.services-text-p{
+    font-size: 20px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+.services-cards{
+    display: flex;
+    animation-delay: 0.2s;
+    padding: 70px 10vw;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-cards > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(50% - 40px*5/6);
+    max-width: calc(50%- 40px*5/6);
+    line-height: 30px;
+     /* padding: 20px; */
+}
+
+.services-cards-image{
+    width:20%;
+    height:auto;
+
+}
+.services-cards h2{
+    font-family: "Abril Fatface", times, serif;
+    font-size:2.5vw;
+
+}
+
+.services-cards div span{
+        color:#838b92;
+
+}
+.carousel-blog{
+display:flex;
+flex-direction: column;
+background-image:linear-gradient(180deg,
+rgba(38, 45, 63, 0.05) 0%,rgba(38, 45, 63, 0.05) 30%, rgba(38, 45, 63, 0.1) 30%, rgba(38, 45, 63, 0.1) 100%) ;
+align-items: center;
+padding:100px 0px;
+}
+
+.carousal-text{
+    padding: 5vw 23vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width: 80vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.blog-text{
+    /* width:60vw; */
+    padding: 80px 23vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:20px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10vw;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px*2)/3);
+    max-width: calc(50% - (25px*2)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+
+/* styles for screen with 768 or less width */
+@media (max-width:768px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 85vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 6vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    background-color: rgba(38, 45, 63, 0.05);
+    display: flex;
+    padding: 0 12vw;
+    flex-wrap: wrap;
+    height: unset;
+    padding-top: 35px;
+    gap: 30px;
+    justify-content: center;
+}
+.image-card{
+    flex: 1 1 calc(100% - 30px/2);
+    max-width: calc(100%  - 30px/2);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:auto;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px/2);   
+    max-width: calc(100% - 30px/2);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 20px;
+    
+}
+
+.image-text h1{
+    font-size: 30px;
+}
+.image-text p{
+    font-size: 15px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+
+.top-section{
+    order:0;
+}
+.bottom-section{
+    order:1;
+}
+
+.services{
+    display:flex;
+    background-color: rgba(38, 45, 63, 0.05);
+    padding: 8vw 0vw;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+}
+.services-text{
+    animation-delay: 0.1s;
+    padding: 0 20vw;
+}
+.services-text-p{
+    font-size: 20px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+.services-cards{
+    display: flex;
+    animation-delay: 0.2s;
+    padding: 70px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-cards > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(100% - 40px*5/6);
+    max-width: calc(100%- 40px*5/6);
+    line-height: 30px;
+     /* padding: 20px; */
+}
+
+.services-cards-image{
+    width:10%;
+    height:auto;
+
+}
+.services-cards h2{
+    font-family: "Abril Fatface", times, serif;
+    font-size:3.5vw;
+
+}
+
+.services-cards div span{
+        color:#838b92;
+
+}
+.carousel-blog{
+display:flex;
+flex-direction: column;
+background-image:linear-gradient(180deg,
+rgba(38, 45, 63, 0.05) 0%,rgba(38, 45, 63, 0.05) 30%, rgba(38, 45, 63, 0.1) 30%, rgba(38, 45, 63, 0.1) 100%) ;
+align-items: center;
+padding:100px 0px;
+}
+
+.carousal-text{
+    padding: 5vw 18vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:80vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.blog-text{
+    /* width:60vw; */
+    padding: 80px 18vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:20px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px*2)/3);
+    max-width: calc(50% - (25px*2)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+}
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+@media (max-width:600px){
+  .landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 80vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 7.5vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    background-color: rgba(38, 45, 63, 0.05);
+    display: flex;
+    padding: 0 4vw;
+    flex-wrap: wrap;
+    height: unset;
+    gap: 30px;
+    padding-top: 30px;
+}
+.image-card{
+    flex: 1 1 calc(100% - 30px/2);
+    max-width: calc(100% - 30px/2);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px/2);   
+    max-width: calc(100% - 30px/2);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+.image-text p{
+    font-size: 17px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+
+.top-section{
+    order:0;
+}
+.bottom-section{
+    order:1;
+}
+
+.services{
+    display:flex;
+    background-color: rgba(38, 45, 63, 0.05);
+    padding: 8vw 0vw;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+}
+.services-text{
+    animation-delay: 0.1s;
+    padding: 0 20vw;
+}
+.services-text-p{
+    font-size: 20px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+.services-cards{
+    display: flex;
+    animation-delay: 0.2s;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-cards > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(100% - 40px*5/6);
+    max-width: calc(100%- 40px*5/6);
+    line-height: 30px;
+     /* padding: 20px; */
+}
+
+.services-cards-image{
+    width:15%;
+    height:auto;
+
+}
+.services-cards h2{
+    font-family: "Abril Fatface", times, serif;
+    font-size: 5vw;
+
+}
+
+.services-cards div span{
+        color:#838b92;
+
+}
+.carousel-blog{
+display:flex;
+flex-direction: column;
+background-image:linear-gradient(180deg,
+rgba(38, 45, 63, 0.05) 0%,rgba(38, 45, 63, 0.05) 22%, rgba(38, 45, 63, 0.1) 22%, rgba(38, 45, 63, 0.1) 100%) ;
+align-items: center;
+padding:100px 0px;
+}
+
+.carousal-text{
+    padding: 5vw 10vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:90vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.blog-text{
+    /* width:60vw; */
+    padding: 80px 10vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:20px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - (25px*2)/3);
+    max-width: calc(100% - (25px*2)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}  
+}

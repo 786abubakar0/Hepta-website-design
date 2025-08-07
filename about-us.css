@@ -1,0 +1,1087 @@
+body{
+    margin:0;
+}
+.abril-font{
+    font-family: "Abril Fatface", times, serif;
+
+}
+#spinner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#spinner i{
+     width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#main-container{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgba(38, 45, 63, 0.05);
+
+}
+
+a.nostyle{
+ text-align: center;
+  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none; /* Remove the underline */
+
+}
+
+a.nostyle:hover{
+    color: inherit;
+    
+}
+/* Animations and other effects */
+
+#video-icon:hover{
+    color:#595f65;
+}
+
+/* 1. Define the Keyframe Animation */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateY(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+
+/* 2. Define the Keyframe Animation */
+@keyframes slideInFromCorner {
+  0% {
+    transform: translateX(-100px) translateY(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateX(0) translateY(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+
+/* 3. Define the Keyframe Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100px); /* Start 100px below its final position */
+    opacity: 0;                   /* Start completely invisible */
+  }
+  100% {
+    transform: translateX(0);     /* End at its original position */
+    opacity: 1;                   /* End fully visible */
+  }
+}
+.animate-me{
+    opacity:0;
+}
+.active1{
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.animate-me2{
+    opacity:0;
+}
+.active2{
+    animation: slideInFromCorner 1s ease-out forwards;
+}
+
+.active3{
+    animation: slideInFromLeft 1s ease-out forwards;
+
+}
+.animate-me3{
+    opacity: 0;
+ 
+}
+/* Base style for landing section */
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 100vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+
+
+.landing-section-text{
+    justify-items: center;
+    margin: auto;
+}
+.main-heading{
+    align-self: center;
+    font-size: 6vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2.1vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+    background-color: white;
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+.video-section{
+    /* background-color: rgba(38, 45, 63, 0.05); */
+    display: flex;
+    padding: 0 4vw;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 6vw 2vw;
+}
+.image-card{
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:100%;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50%);   
+    max-width: calc(50%);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 50px;
+    
+}
+
+.image-text h1{
+    font-size: 30px;
+}
+.image-text p{
+    font-size: 16px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+
+
+.carousel-blog{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:0vw 0px;
+}
+
+.carousal-text{
+    padding: 5vw 20vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 45px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:80vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 0px;
+}
+.blog-text{
+    /* width:60vw; */
+    padding: 65px 20vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:0px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 35px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(33% - (35px*5)/3);
+    max-width: calc(33% - (35px*5)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+    font-size: 20px;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+/* styles for screen with 1024 or less width */
+@media (max-width:992px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0);
+    min-height: 90vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 5vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    /* background-color: rgba(38, 45, 63, 0.05); */
+    display: flex;
+    padding: 0 4vw;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 8vw 2vw;
+}
+.image-card{
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:100%;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50%);   
+    max-width: calc(50%);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+.image-text p{
+    font-size: 15px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+ 
+
+
+.carousel-blog{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:0vw 0px;
+}
+
+.carousal-text{
+    padding: 5vw 20vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:80vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 0 6vw 0;
+}
+.blog-text{
+    /* width:60vw; */
+    padding: 80px 20vw 30px 20vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:0px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(33% - (25px*5)/3);
+    max-width: calc(33% - (25px*5)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+    font-size: 20px;
+}
+
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+
+/* styles for screen with 768 or less width */
+@media (max-width:768px){
+  
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    min-height: 90vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 6vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    /* background-color: rgba(38, 45, 63, 0.05); */
+    display: flex;
+    padding: 0 6vw;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 8vw 2vw 2vw 2vw;
+    gap: 30px;
+}
+.image-card{
+    flex: 1 1 calc(100% - 30px/2);
+    max-width: calc(100% - 30px/2);
+    display: flex;
+    margin: auto;
+    animation-delay: 0.1s;
+    overflow: hidden;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:100%;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px/2);   
+    max-width: calc(100% - 30px/2);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+.image-text p{
+    font-size: 15px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+ 
+
+
+.carousel-blog{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:0vw 0 0 0;
+}
+
+.carousal-text{
+    padding: 5vw 16vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width: 85vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 0 6vw 0;
+}
+.blog-text{
+    /* width:60vw; */
+    padding: 80px 16vw 20px 16vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:5px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 12vw;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px*5)/3);
+    max-width: calc(50% - (25px*5)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+    font-size: 20px;
+}
+
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}
+
+
+
+}
+
+@media (max-width:600px){
+  .landing-section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 55, 48, 0.2)),
+    url("images/slider_2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0);
+    min-height: 80vh;
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    padding: 50px 10px 0px 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navigation-icon{
+    margin-left: auto;
+    z-index: 1000;
+}
+.main-heading{
+    align-self: center;
+    font-size: 10vw;
+    font-weight: 900;
+    
+}
+.sub-heading{
+    align-self: center;
+    font-size: 3.5vw;
+    margin-top: 20px;
+    margin-bottom: 70px;    
+
+    animation-delay: 0.1s;
+}
+
+.menu-container{
+    display:none;
+    width: 100vw;
+    height:100vh;
+    font-family: "Abril Fatface", times, serif;   
+}
+.nav-menu{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    color: Black;
+    justify-content: center;
+    
+}
+.nav-menu div{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.close-icon{
+    position: fixed;
+    top:50px;
+    right: 10px;
+}
+
+
+.video-section{
+    /* background-color: rgba(38, 45, 63, 0.05); */
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    /* margin: 0; */
+    height: auto;
+}
+.image-card{
+    flex: 1 1 calc(100% - 30px/2);
+    max-width: calc(100% - 30px/2);
+    height: auto;
+    animation-delay: 0.1s;
+    overflow: hidden;
+    padding: 0;
+}
+.image-card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    margin:0 0;
+    
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px/2);   
+    max-width: calc(100% - 30px/2);
+    animation-delay: 0.2s;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+.image-text p{
+    font-size: 15px;
+    line-height: 30px;
+    color:#838b92;
+
+}
+
+.image-text button{
+    border: 2px solid #65C0BA;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px 25px;
+
+}
+
+.video-icon{
+    display: flex;
+    
+}
+
+#video-icon{
+    color: #65C0BA;
+
+}
+.video-icon span{
+    padding:10px;
+}
+ 
+
+
+.carousel-blog{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding: 8vw 0 0 0;
+}
+
+.carousal-text{
+    padding: 5vw;
+    text-align: center;
+    animation-delay: 0.1s;
+  
+}
+
+.carousal-heading{
+    font-size: 40px;
+}
+.carousal-text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 10;
+}
+
+.carousal-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #838b92;
+
+}
+
+.main-carousel-container{
+  display: flex;
+  width:90vw;
+  /* margin: 0 auto; */
+  animation-delay: 0.2s;
+  justify-content: center;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 0 6vw 0;
+}
+.blog-text{
+    /* width:60vw; */
+    padding: 60px 5vw 10px 5vw;
+    text-align: center;
+  
+}
+.blog-text h1{
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: 10;
+    padding:5px 0px;
+}
+
+.blog-text p{
+    line-height: 30px;
+    font-size: 15px;
+    color: #5c6871;
+}
+
+.blog-cards{
+    display:flex;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5vw;
+    gap: 25px;
+}
+.blog-cards-item{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - (25px*5)/3);
+    max-width: calc(50% - (25px*5)/3);
+    background-color: white;
+}
+
+.blog-cards-item img{
+    width: 100%;
+}
+.blog-cards-item-text{
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.blog-cards-item-text p{
+    line-height: 30px;
+    color: #838b92;
+}
+
+.blog-cards-date{
+    color: #7c8287;
+    font-size: 20px;
+}
+
+.footer-container{
+    padding:30px;
+    background-color: #212529;
+    
+}
+
+.footer-container a{
+    color: white;
+}  
+}
